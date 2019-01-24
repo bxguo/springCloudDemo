@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-client-consumer" />
+        <module name="spring-eureka-server-demo" />
+        <module name="springBootDemo" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring-client-consumer" target="1.8" />
+      <module name="spring-eureka-server-demo" target="1.8" />
+      <module name="springBootDemo" target="1.8" />
+      <module name="springCloudDemo" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
