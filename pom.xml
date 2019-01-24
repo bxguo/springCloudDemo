@@ -23,6 +23,9 @@
 		<module>springBootDemo</module>
 		<module>spring-client-consumer-demo</module>
 		<module>spring-eureka-server-demo</module>
+		<module>spring-consumer-node1</module>
+		<module>spring-consumer-node2</module>
+		<module>spring-hystrix-dashboard-turbine</module>
 	</modules>
 	
 	<dependencyManagement>

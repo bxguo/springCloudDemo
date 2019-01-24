@@ -1,4 +1,4 @@
-package com.zysl.spring;
+package com.zysl.eurekademo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,10 +14,10 @@ import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboar
 @EnableDiscoveryClient
 @EnableHystrixDashboard
 @EnableCircuitBreaker
-public class SpringClientConsumerApplication {
+public class SpringConsumerNode2Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringClientConsumerApplication.class, args);
+        SpringApplication.run(SpringConsumerNode2Application.class, args);
     }
 
 }
