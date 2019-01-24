@@ -20,12 +20,18 @@
 	
 	
 	<modules>
-		<module>springBootDemo</module>
-		<module>spring-client-consumer-demo</module>
+        <!--服务中心-->
 		<module>spring-eureka-server-demo</module>
-		<module>spring-consumer-node1</module>
+        <!--生产者-->
+        <module>springBootDemo</module>
+        <!--消费者-->
+        <module>spring-client-consumer-demo</module>
+        <module>spring-consumer-node1</module>
 		<module>spring-consumer-node2</module>
+        <!--熔断器面板-->
 		<module>spring-hystrix-dashboard-turbine</module>
+        <!--配置中心-->
+		<module>spring-config-server</module>
 	</modules>
 	
 	<dependencyManagement>
