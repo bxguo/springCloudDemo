@@ -4,16 +4,23 @@ server:
 spring:
   application:
     name: spring-config-client
-#  cloud:
-#    config:
-#      enabled: true
-#      discovery:
-#        service-id: spring-config-server
+  rabbitmq:
+    host: 192.168.0.6
+    port: 5672
+    username: admin
+    password: 123456
 
 management:
   security:
     enabled: false
 
+
+
+    #  cloud:
+    #    config:
+    #      enabled: true
+    #      discovery:
+    #        service-id: spring-config-server
 #eureka:
 #  client:
 #    service-url:

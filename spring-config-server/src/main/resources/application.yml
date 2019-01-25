@@ -11,7 +11,17 @@ spring:
           search-paths: repo-config                             # git仓库地址下的相对地址，可以配置多个，用,分割。
           username:                                              # git仓库的账号
           password:                                             # git仓库的密码
+  rabbitmq:
+    host: 192.168.0.6
+    port: 5672
+    username: admin
+    password: 123456
+
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:1111/eureka/
+
+management:
+  security:
+    enabled: false

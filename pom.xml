@@ -32,6 +32,7 @@
         <!--配置中心-->
 		<module>spring-config-server</module>
 		<module>spring-config-client</module>
+		<module>spring-config-client2</module>
 	</modules>
 	
 	<dependencyManagement>

@@ -12,9 +12,10 @@
 	<description>
 		git test: 配置服务 客户端
 		port:8002
-		test url : http://localhost:8002/datasource
-		手动更新测试 Active refresh： curl -X POST http://localhost:8002/refresh
+		step 1 test url : http://localhost:8002/datasource
+		step 2 手动更新测试 Active refresh： curl -X POST http://localhost:8002/refresh
 		（webhook可实现自动更新）
+        step 3 利用Spring Cloud Bus实现更新
 	</description>
 
 	<parent>
@@ -42,6 +43,17 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!--注册服务-->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
 		<!--请求server配置支持-->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
@@ -54,16 +66,12 @@
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 
-		<!--注册服务-->
+		<!--消息支持-->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-eureka</artifactId>
+			<artifactId>spring-cloud-starter-bus-amqp</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
+
 
 	</dependencies>
 
