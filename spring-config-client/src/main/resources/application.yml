@@ -1,0 +1,26 @@
+server:
+  port: 8002
+
+spring:
+  application:
+    name: spring-config-client
+  cloud:
+    config:
+      enabled: true
+      discovery:
+        service-id: spring-config-server
+
+management:
+  security:
+    enabled: false
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka/
+
+
+#      spring.cloud.config.discovery.enabled=true
+#      spring.cloud.config.discovery.serviceId=spring-cloud-config-server
+#
+#      eureka.client.serviceUrl.defaultZone=http://localhost:8000/eureka/
