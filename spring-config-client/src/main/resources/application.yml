@@ -4,23 +4,20 @@ server:
 spring:
   application:
     name: spring-config-client
-  cloud:
-    config:
-      enabled: true
-      discovery:
-        service-id: spring-config-server
+#  cloud:
+#    config:
+#      enabled: true
+#      discovery:
+#        service-id: spring-config-server
 
 management:
   security:
     enabled: false
 
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:1111/eureka/
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:1111/eureka/
+#注释部分必须放在bootstrap文件中
 
 
-#      spring.cloud.config.discovery.enabled=true
-#      spring.cloud.config.discovery.serviceId=spring-cloud-config-server
-#
-#      eureka.client.serviceUrl.defaultZone=http://localhost:8000/eureka/
