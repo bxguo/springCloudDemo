@@ -20,7 +20,6 @@
 	
 	
 	<modules>
-        <!--服务中心-->
 		<module>spring-eureka-server-demo</module>
         <!--生产者-->
         <module>springBootDemo</module>
@@ -32,6 +31,7 @@
 		<module>spring-hystrix-dashboard-turbine</module>
         <!--配置中心-->
 		<module>spring-config-server</module>
+		<module>spring-config-client</module>
 	</modules>
 	
 	<dependencyManagement>

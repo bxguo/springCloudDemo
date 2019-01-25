@@ -29,6 +29,7 @@
     </properties>
 
     <dependencies>
+        <!--服务端-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-config-server</artifactId>
