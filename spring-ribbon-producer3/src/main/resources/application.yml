@@ -1,0 +1,12 @@
+server:
+  port: 8082
+ 
+spring:
+    application:
+        name: spring-ribbon-producer
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka/  # 注册中心访问地址
+#             defaultZone: http://eureka01:9001/eureka/,http://eureka02:9002/eureka/

@@ -32,7 +32,11 @@
         <!--配置中心-->
 		<module>spring-config-server</module>
 		<module>spring-config-client</module>
-		<module>spring-config-client2</module>
+		<!--ribbon 测试-->
+		<module>spring-ribbon-producer2</module>
+		<module>spring-ribbon-producer3</module>
+		<module>spring-ribbon-producer4</module>
+		<module>spring-ribbon-consumer</module>
 	</modules>
 	
 	<dependencyManagement>
