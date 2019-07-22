@@ -5,11 +5,12 @@ spring:
   application:
     name: spring-config-client
   rabbitmq:
-    host: 192.168.0.6
+    host: 192.168.200.115
     port: 5672
     username: admin
     password: 123456
 
+# 自动刷新时，关闭安全验证
 management:
   security:
     enabled: false
