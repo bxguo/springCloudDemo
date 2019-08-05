@@ -12,8 +12,15 @@ class HelloController {
     @Value("${spring.datasource.url}")
     private String datasource;
 
+    @Value("${name}")
+    private String name;
+
     @RequestMapping("/datasource")
     public String from() {
         return this.datasource;
+    }
+    @RequestMapping("/name")
+    public String name() {
+        return this.name;
     }
 }
