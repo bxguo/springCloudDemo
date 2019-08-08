@@ -13,9 +13,7 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<jsp.version>2.0</jsp.version>
 		<servlet.version>2.5</servlet.version>
-		
-		
-		
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	
 	
@@ -38,9 +36,25 @@
 		<module>spring-ribbon-producer4</module>
 		<module>spring-ribbon-consumer</module>
 	</modules>
-	
+
 	<dependencyManagement>
-		
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>Greenwich.RELEASE</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-parent</artifactId>
+				<version>2.1.3.RELEASE</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
 	</dependencyManagement>
 	
 	<build>
@@ -49,10 +63,21 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<encoding>${project.build.sourceEncoding}</encoding>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
-	<repositories>
+
+
+<!--	<repositories>
 		<repository>
 			<id>spring-releases</id>
 			<url>https://repo.spring.io/libs-release</url>
@@ -63,6 +88,6 @@
 			<id>spring-releases</id>
 			<url>https://repo.spring.io/libs-release</url>
 		</pluginRepository>
-	</pluginRepositories>
+	</pluginRepositories>-->
 	
 </project>	
