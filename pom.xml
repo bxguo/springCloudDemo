@@ -35,6 +35,9 @@
 		<module>spring-ribbon-producer3</module>
 		<module>spring-ribbon-producer4</module>
 		<module>spring-ribbon-consumer</module>
+
+		<!--spring-gateway 测试-->
+		<module>spring-gateway</module>
 	</modules>
 
 	<dependencyManagement>
